@@ -1,0 +1,19 @@
+# See https://github.com/robvanderleek/create-issue-branch for all configuration options.
+
+# Make the app silent, no comments on the issue after creating a branch
+silent: true
+
+# The word issue followed by the issue number, for example: issue-15
+branchName: short
+
+# Automatically close issues after a pull request merge
+autoCloseIssue: true
+
+# Branch name prefix based on issue label
+branches:
+  - label: enhancement
+    prefix: feat/
+  - label: bug
+    prefix: fix/
+  - label: '*'
+    skip: true
